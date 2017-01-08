@@ -49,7 +49,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate, LevelProtocol{
         
         //Just incase for null! pointer exceptions
         let cam = SKCameraNode()
-        //ASDFself.camera = cam
+        self.camera = cam
         self.addChild(cam)
         cam.position = CGPoint(x: 0, y: 0)
         
@@ -87,7 +87,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate, LevelProtocol{
             currentPlanet.panCamera(pos: positionInScene)
             currentPlanet.setRotation(pos: positionInScene)
             
-            line.size.height = 2 * abs(positionInScene.y)
         
             
         }
