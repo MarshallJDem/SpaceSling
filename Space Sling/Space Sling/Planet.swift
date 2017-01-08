@@ -151,7 +151,7 @@ class Planet: SKSpriteNode {
         
         
         //Main Init
-        //ASDF(global as! SKScene).camera = cam
+        (global as! SKScene).camera = cam
         global.currentPlanet = self
         parentRing.isActive = true
         isAwake = false
@@ -188,9 +188,9 @@ class Planet: SKSpriteNode {
         
         //Camera stuff. The planet camera follows a predicted path, then global.camera = ship.cam
         
-        /*(AASDFcamFather.run(SKAction.sequence([SKAction.move(to: (global as! SKScene).convert(CGPoint(x: pos.x + velocity.dx * 0.1, y: pos.y + velocity.dy * 0.1), to: self), duration: 0.1), SKAction.run {
+        camFather.run(SKAction.sequence([SKAction.move(to: (global as! SKScene).convert(CGPoint(x: pos.x + velocity.dx * 0.1, y: pos.y + velocity.dy * 0.1), to: self), duration: 0.1), SKAction.run {
             (self.global as! SKScene).camera = self.global.currentShip.cam
-            }]), withKey: "trajectory")*/
+            }]), withKey: "trajectory")
         
         //Other important things
         rotationSpeed = 0.0
