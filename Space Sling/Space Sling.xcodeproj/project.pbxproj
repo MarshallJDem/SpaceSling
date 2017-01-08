@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC2CD9261E1B86D500C18F1E /* Ring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CD9251E1B86D500C18F1E /* Ring.swift */; };
+		CC2CD9281E1B8B6100C18F1E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CD9271E1B8B6100C18F1E /* Planet.swift */; };
+		CC2CD92A1E1C189F00C18F1E /* Levels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CD9291E1C189F00C18F1E /* Levels.swift */; };
+		CC2CD92C1E1E090D00C18F1E /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2CD92B1E1E090D00C18F1E /* Ship.swift */; };
+		CC53CEEE1E189E7400ADB345 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CEED1E189E7400ADB345 /* AppDelegate.swift */; };
+		CC53CEF21E189E7400ADB345 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = CC53CEF11E189E7400ADB345 /* Actions.sks */; };
+		CC53CEF41E189E7400ADB345 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CEF31E189E7400ADB345 /* GameScene.swift */; };
+		CC53CEF61E189E7400ADB345 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CEF51E189E7400ADB345 /* GameViewController.swift */; };
+		CC53CEF91E189E7400ADB345 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC53CEF71E189E7400ADB345 /* Main.storyboard */; };
+		CC53CEFB1E189E7400ADB345 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC53CEFA1E189E7400ADB345 /* Assets.xcassets */; };
+		CC53CEFE1E189E7400ADB345 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC53CEFC1E189E7400ADB345 /* LaunchScreen.storyboard */; };
+		CC53CF091E189E7400ADB345 /* Space_SlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CF081E189E7400ADB345 /* Space_SlingTests.swift */; };
+		CC53CF141E189E7400ADB345 /* Space_SlingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CF131E189E7400ADB345 /* Space_SlingUITests.swift */; };
+		CC53CF221E19977F00ADB345 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CF211E19977F00ADB345 /* System.swift */; };
+		CC53CF241E1997F900ADB345 /* LevelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC53CF231E1997F900ADB345 /* LevelProtocol.swift */; };
+		CC53CF281E199B8900ADB345 /* blueP.png in Resources */ = {isa = PBXBuildFile; fileRef = CC53CF251E199B8900ADB345 /* blueP.png */; };
+		CC53CF291E199B8900ADB345 /* redP.png in Resources */ = {isa = PBXBuildFile; fileRef = CC53CF261E199B8900ADB345 /* redP.png */; };
+		CC53CF2A1E199B8900ADB345 /* orangeP.png in Resources */ = {isa = PBXBuildFile; fileRef = CC53CF271E199B8900ADB345 /* orangeP.png */; };
+		CC53CF2C1E19AA3300ADB345 /* space.png in Resources */ = {isa = PBXBuildFile; fileRef = CC53CF2B1E19AA3300ADB345 /* space.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC53CF051E189E7400ADB345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC53CEE21E189E7400ADB345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC53CEE91E189E7400ADB345;
+			remoteInfo = "Space Sling";
+		};
+		CC53CF101E189E7400ADB345 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC53CEE21E189E7400ADB345 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC53CEE91E189E7400ADB345;
+			remoteInfo = "Space Sling";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC2CD9251E1B86D500C18F1E /* Ring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ring.swift; sourceTree = "<group>"; };
+		CC2CD9271E1B8B6100C18F1E /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		CC2CD9291E1C189F00C18F1E /* Levels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Levels.swift; sourceTree = "<group>"; };
+		CC2CD92B1E1E090D00C18F1E /* Ship.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		CC53CEEA1E189E7400ADB345 /* Space Sling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Sling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC53CEED1E189E7400ADB345 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC53CEF11E189E7400ADB345 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		CC53CEF31E189E7400ADB345 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CC53CEF51E189E7400ADB345 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CC53CEF81E189E7400ADB345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC53CEFA1E189E7400ADB345 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC53CEFD1E189E7400ADB345 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC53CEFF1E189E7400ADB345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC53CF041E189E7400ADB345 /* Space SlingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space SlingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC53CF081E189E7400ADB345 /* Space_SlingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_SlingTests.swift; sourceTree = "<group>"; };
+		CC53CF0A1E189E7400ADB345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC53CF0F1E189E7400ADB345 /* Space SlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space SlingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC53CF131E189E7400ADB345 /* Space_SlingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_SlingUITests.swift; sourceTree = "<group>"; };
+		CC53CF151E189E7400ADB345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC53CF211E19977F00ADB345 /* System.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		CC53CF231E1997F900ADB345 /* LevelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelProtocol.swift; sourceTree = "<group>"; };
+		CC53CF251E199B8900ADB345 /* blueP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blueP.png; sourceTree = SOURCE_ROOT; };
+		CC53CF261E199B8900ADB345 /* redP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redP.png; sourceTree = SOURCE_ROOT; };
+		CC53CF271E199B8900ADB345 /* orangeP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeP.png; sourceTree = SOURCE_ROOT; };
+		CC53CF2B1E19AA3300ADB345 /* space.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = space.png; path = ../space.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC53CEE71E189E7400ADB345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF011E189E7400ADB345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF0C1E189E7400ADB345 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC53CEE11E189E7400ADB345 = {
+			isa = PBXGroup;
+			children = (
+				CC53CEEC1E189E7400ADB345 /* Space Sling */,
+				CC53CF071E189E7400ADB345 /* Space SlingTests */,
+				CC53CF121E189E7400ADB345 /* Space SlingUITests */,
+				CC53CEEB1E189E7400ADB345 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC53CEEB1E189E7400ADB345 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC53CEEA1E189E7400ADB345 /* Space Sling.app */,
+				CC53CF041E189E7400ADB345 /* Space SlingTests.xctest */,
+				CC53CF0F1E189E7400ADB345 /* Space SlingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC53CEEC1E189E7400ADB345 /* Space Sling */ = {
+			isa = PBXGroup;
+			children = (
+				CC53CEF31E189E7400ADB345 /* GameScene.swift */,
+				CC53CF211E19977F00ADB345 /* System.swift */,
+				CC2CD9251E1B86D500C18F1E /* Ring.swift */,
+				CC2CD9271E1B8B6100C18F1E /* Planet.swift */,
+				CC2CD92B1E1E090D00C18F1E /* Ship.swift */,
+				CC2CD9291E1C189F00C18F1E /* Levels.swift */,
+				CC53CF231E1997F900ADB345 /* LevelProtocol.swift */,
+				CC53CEF51E189E7400ADB345 /* GameViewController.swift */,
+				CC53CEF11E189E7400ADB345 /* Actions.sks */,
+				CC53CEF71E189E7400ADB345 /* Main.storyboard */,
+				CC53CEED1E189E7400ADB345 /* AppDelegate.swift */,
+				CC53CEFA1E189E7400ADB345 /* Assets.xcassets */,
+				CC53CEFC1E189E7400ADB345 /* LaunchScreen.storyboard */,
+				CC53CEFF1E189E7400ADB345 /* Info.plist */,
+				CC53CF251E199B8900ADB345 /* blueP.png */,
+				CC53CF261E199B8900ADB345 /* redP.png */,
+				CC53CF271E199B8900ADB345 /* orangeP.png */,
+				CC53CF2B1E19AA3300ADB345 /* space.png */,
+			);
+			path = "Space Sling";
+			sourceTree = "<group>";
+		};
+		CC53CF071E189E7400ADB345 /* Space SlingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC53CF081E189E7400ADB345 /* Space_SlingTests.swift */,
+				CC53CF0A1E189E7400ADB345 /* Info.plist */,
+			);
+			path = "Space SlingTests";
+			sourceTree = "<group>";
+		};
+		CC53CF121E189E7400ADB345 /* Space SlingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CC53CF131E189E7400ADB345 /* Space_SlingUITests.swift */,
+				CC53CF151E189E7400ADB345 /* Info.plist */,
+			);
+			path = "Space SlingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC53CEE91E189E7400ADB345 /* Space Sling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC53CF181E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space Sling" */;
+			buildPhases = (
+				CC53CEE61E189E7400ADB345 /* Sources */,
+				CC53CEE71E189E7400ADB345 /* Frameworks */,
+				CC53CEE81E189E7400ADB345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Sling";
+			productName = "Space Sling";
+			productReference = CC53CEEA1E189E7400ADB345 /* Space Sling.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC53CF031E189E7400ADB345 /* Space SlingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC53CF1B1E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space SlingTests" */;
+			buildPhases = (
+				CC53CF001E189E7400ADB345 /* Sources */,
+				CC53CF011E189E7400ADB345 /* Frameworks */,
+				CC53CF021E189E7400ADB345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC53CF061E189E7400ADB345 /* PBXTargetDependency */,
+			);
+			name = "Space SlingTests";
+			productName = "Space SlingTests";
+			productReference = CC53CF041E189E7400ADB345 /* Space SlingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC53CF0E1E189E7400ADB345 /* Space SlingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC53CF1E1E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space SlingUITests" */;
+			buildPhases = (
+				CC53CF0B1E189E7400ADB345 /* Sources */,
+				CC53CF0C1E189E7400ADB345 /* Frameworks */,
+				CC53CF0D1E189E7400ADB345 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC53CF111E189E7400ADB345 /* PBXTargetDependency */,
+			);
+			name = "Space SlingUITests";
+			productName = "Space SlingUITests";
+			productReference = CC53CF0F1E189E7400ADB345 /* Space SlingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC53CEE21E189E7400ADB345 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = MarshallD;
+				TargetAttributes = {
+					CC53CEE91E189E7400ADB345 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZAQA5V94ET;
+						ProvisioningStyle = Automatic;
+					};
+					CC53CF031E189E7400ADB345 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC53CEE91E189E7400ADB345;
+					};
+					CC53CF0E1E189E7400ADB345 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CC53CEE91E189E7400ADB345;
+					};
+				};
+			};
+			buildConfigurationList = CC53CEE51E189E7400ADB345 /* Build configuration list for PBXProject "Space Sling" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC53CEE11E189E7400ADB345;
+			productRefGroup = CC53CEEB1E189E7400ADB345 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC53CEE91E189E7400ADB345 /* Space Sling */,
+				CC53CF031E189E7400ADB345 /* Space SlingTests */,
+				CC53CF0E1E189E7400ADB345 /* Space SlingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC53CEE81E189E7400ADB345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC53CF2C1E19AA3300ADB345 /* space.png in Resources */,
+				CC53CEF91E189E7400ADB345 /* Main.storyboard in Resources */,
+				CC53CF2A1E199B8900ADB345 /* orangeP.png in Resources */,
+				CC53CEFB1E189E7400ADB345 /* Assets.xcassets in Resources */,
+				CC53CF291E199B8900ADB345 /* redP.png in Resources */,
+				CC53CEFE1E189E7400ADB345 /* LaunchScreen.storyboard in Resources */,
+				CC53CF281E199B8900ADB345 /* blueP.png in Resources */,
+				CC53CEF21E189E7400ADB345 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF021E189E7400ADB345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF0D1E189E7400ADB345 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC53CEE61E189E7400ADB345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC53CEF41E189E7400ADB345 /* GameScene.swift in Sources */,
+				CC2CD9261E1B86D500C18F1E /* Ring.swift in Sources */,
+				CC2CD92A1E1C189F00C18F1E /* Levels.swift in Sources */,
+				CC53CF241E1997F900ADB345 /* LevelProtocol.swift in Sources */,
+				CC2CD92C1E1E090D00C18F1E /* Ship.swift in Sources */,
+				CC53CEF61E189E7400ADB345 /* GameViewController.swift in Sources */,
+				CC2CD9281E1B8B6100C18F1E /* Planet.swift in Sources */,
+				CC53CEEE1E189E7400ADB345 /* AppDelegate.swift in Sources */,
+				CC53CF221E19977F00ADB345 /* System.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF001E189E7400ADB345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC53CF091E189E7400ADB345 /* Space_SlingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC53CF0B1E189E7400ADB345 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC53CF141E189E7400ADB345 /* Space_SlingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC53CF061E189E7400ADB345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC53CEE91E189E7400ADB345 /* Space Sling */;
+			targetProxy = CC53CF051E189E7400ADB345 /* PBXContainerItemProxy */;
+		};
+		CC53CF111E189E7400ADB345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC53CEE91E189E7400ADB345 /* Space Sling */;
+			targetProxy = CC53CF101E189E7400ADB345 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC53CEF71E189E7400ADB345 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC53CEF81E189E7400ADB345 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC53CEFC1E189E7400ADB345 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC53CEFD1E189E7400ADB345 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC53CF161E189E7400ADB345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC53CF171E189E7400ADB345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC53CF191E189E7400ADB345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAQA5V94ET;
+				INFOPLIST_FILE = "Space Sling/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-Sling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC53CF1A1E189E7400ADB345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZAQA5V94ET;
+				INFOPLIST_FILE = "Space Sling/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-Sling";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC53CF1C1E189E7400ADB345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Space SlingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-SlingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Sling.app/Space Sling";
+			};
+			name = Debug;
+		};
+		CC53CF1D1E189E7400ADB345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Space SlingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-SlingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Sling.app/Space Sling";
+			};
+			name = Release;
+		};
+		CC53CF1F1E189E7400ADB345 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Space SlingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-SlingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Space Sling";
+			};
+			name = Debug;
+		};
+		CC53CF201E189E7400ADB345 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Space SlingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MarshallD.Space-SlingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Space Sling";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC53CEE51E189E7400ADB345 /* Build configuration list for PBXProject "Space Sling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC53CF161E189E7400ADB345 /* Debug */,
+				CC53CF171E189E7400ADB345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC53CF181E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space Sling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC53CF191E189E7400ADB345 /* Debug */,
+				CC53CF1A1E189E7400ADB345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC53CF1B1E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space SlingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC53CF1C1E189E7400ADB345 /* Debug */,
+				CC53CF1D1E189E7400ADB345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC53CF1E1E189E7400ADB345 /* Build configuration list for PBXNativeTarget "Space SlingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC53CF1F1E189E7400ADB345 /* Debug */,
+				CC53CF201E189E7400ADB345 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC53CEE21E189E7400ADB345 /* Project object */;
+}
